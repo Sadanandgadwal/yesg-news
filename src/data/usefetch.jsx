@@ -7,11 +7,15 @@ const useFetch = (url) => {
   useEffect(() => {
     let subscribe = true;
 
+    const options = {
+      Accept: "*/*",
+    };
+
     setloading(true);
 
     if (subscribe) {
       axios
-        .get(url)
+        .get(url, options)
         .then((res) => {
           setData(res.data.articles);
           setloading(false);
