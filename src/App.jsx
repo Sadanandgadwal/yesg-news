@@ -42,7 +42,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/sport" element={<Sports />} />
         <Route exact path="/tech" element={<Tech />} />
-        <Route exact path="/entertainment" element={<Entertainmentgi />} />
+        <Route exact path="/entertainment" element={<Entertainment />} />
         <Route exact path="/business" element={<Business />} />
       </Routes>
     </>
